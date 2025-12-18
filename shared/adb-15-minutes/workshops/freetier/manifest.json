@@ -21,7 +21,7 @@
         {
           "title": "Lab 1: Provision an ADB Instance",
           "type": "freetier",
-          "filename": "../../provision-database/adb-provision-moviestream.md"
+            "filename": "/common/building-blocks/blocks/adb/provision/provision-console.md"
         },
         {
             "title": "Lab 2: Load Data from a Public Object Storage Bucket and Create Tables",

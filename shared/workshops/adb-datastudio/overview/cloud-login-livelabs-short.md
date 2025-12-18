@@ -35,7 +35,7 @@ Creating an Oracle account can be summarized in the following two simple steps.
 
 ## Task 2: Request Workshop Reservation
 
-1. Using your *Oracle Account Login* go to [LiveLabs](https://developer.oracle.com/livelabs). Open a workshop, click **Start**, and then **Run on LiveLabs Sandbox** to request a reservation for this workshop.
+1. Using your *Oracle Account Login* go to [LiveLabs](https://livelabs.oracle.com). Open a workshop, click **Start**, and then **Run on LiveLabs Sandbox** to request a reservation for this workshop.
   ![Run on LiveLabs](https://oracle-livelabs.github.io/common/labs/cloud-login/images/run-on-livelabs.png " ")
 
 2. Fill out the information on the *Reserve Workshop* page. Check **I consent to receive emails from LiveLabs for my reservation**. Click **Submit Reservation**.
@@ -59,7 +59,7 @@ Creating an Oracle account can be summarized in the following two simple steps.
 
   ![Login information](https://oracle-livelabs.github.io/common/labs/need-help/images/login-demo1.png " ")
 
-7. Now, click **View Login Info** again to see your Reservation Information. This time, under **Terraform Values** click the link to **Autonomous Database Actions**.
+7. Now, click **View Login Info** again to see your Reservation Information. This time, under **Terraform Values** click the link to **Autonomous AI Database Actions**.
 
   ![Link to Database Actions](./images/dbactions-link-short.png " ")
 
@@ -67,7 +67,7 @@ Creating an Oracle account can be summarized in the following two simple steps.
 
 9. Under **Password** enter (or paste) AAbbcc123456 and click **Sign In**
 
-10. You are now logged in to the Autonomous Database and ready to go! It is a good idea to bookmark this page as you will need to come back to it later in the workshop.
+10. You are now logged in to the Autonomous AI Database and ready to go! It is a good idea to bookmark this page as you will need to come back to it later in the workshop.
 
 You may now **proceed to the next lab**.
 

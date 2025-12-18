@@ -109,10 +109,13 @@ As the **`share_provider`** user, you need to provide the `training_user` recipi
     ```
     <copy>
     BEGIN
-        DBMS_OUTPUT.PUT_LINE(DBMS_SHARE.GET_ACTIVATION_LINK
-        ('training_user'));
-    END;
-    /
+  DBMS_OUTPUT.PUT_LINE(
+    REPLACE(
+      DBMS_SHARE.GET_ACTIVATION_LINK(RECIPIENT_NAME => 'training_user'),
+      'ords/_adpshr',
+      'ords/' || LOWER(USER) || '/_adpshr'));
+END;
+/
     </copy>
     ```
 
@@ -138,7 +141,7 @@ As the `training_user` recipient user, you can use the activation link URL that 
 
 >**Note:** For the recipient to download the `.json` file, it doesn't matter what user you are logged in as. All you need is a Web browser.
 
-1. Copy the activation link URL that was provided to you by your share provider and paste it in your web browser's address bar, and then press **[Enter]**. The **Autonomous Database Data Sharing** page is displayed. To download the config file, click **Get Profile Information**.
+1. Copy the activation link URL that was provided to you by your share provider and paste it in your web browser's address bar, and then press **[Enter]**. The **Autonomous AI Database Data Sharing** page is displayed. To download the config file, click **Get Profile Information**.
 
     ![Click Get Profile Information.](images/click-get-profile.png)
 
@@ -229,7 +232,7 @@ You may now proceed to the next lab.
 ## Learn More
 
 * [Oracle Cloud Infrastructure Documentation](https://docs.cloud.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm)
-* [Using Oracle Autonomous Database Serverless](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/index.html)
+* [Using Oracle Autonomous AI Database Serverless](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/index.html)
 
 ## Acknowledgements
 
@@ -238,14 +241,14 @@ You may now proceed to the next lab.
     * Alexey Filanovskiy, Senior Principal Product Manager
     * David Greenfield, Consulting Member Technical Staff
     * Jakub Illner, Lakehouse and Analytics Data Specialist
-* **Last Updated By/Date:** Lauran K. Serhal, April 2024
+* **Last Updated By/Date:** Lauran K. Serhal, November 2025
 
 Data about movies in this workshop were sourced from Wikipedia.
 
-Copyright (C), 2024 Oracle Corporation.
+Copyright (C), 2025 Oracle Corporation.
 
 Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3
 or any later version published by the Free Software Foundation;
 with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-A copy of the license is included in the section entitled [GNU Free Documentation License](files/gnu-free-documentation-license.txt)
+A copy of the license is included in the section entitled [GNU Free Documentation License](https://oracle-livelabs.github.io/adb/shared/adb-15-minutes/introduction/files/gnu-free-documentation-license.txt)
